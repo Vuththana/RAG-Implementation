@@ -1,31 +1,40 @@
-## Translation Application (Education Purpose)
-This application used **Qwen/Qwen2.5-0.5B-Instruct** for translating input text to the targeted language. I have also implemented guardrails to check for prompt injecting by using **qualifire/prompt-injection-sentinel** to scan for both input inside the application for vulnerabilities, lastly for inappropriate content I use **unitary/toxic-bertunitary/toxic-bert**.
+## RAG Application (Learning Purpose)
 
+### Description
+This is not fully set up with state and content, the LLM doesn't have any memory on previous conversation. I have only configured it to access external sources of my CV pdf files and using the recursive chunking strategy to chunk the extracted text to embedded and storing it to **ChromaDB**.
 
+**Running Model with Docker**
 
-### Requirements
-It is required that your laptop/PC have a GPU that supports CUDA and a good amount of VRAM, at least 6GB.
+```bash
+docker run \                                                                 
+  --gpus all \
+  -d \
+  --name ai \
+  -v ~/.cache/huggingface:/root/.cache/huggingface \
+  -p 8000:8000 \
+  --ipc=host \
+  vllm/vllm-openai:latest \
+  --model Qwen/Qwen2.5-0.5B-Instruct \
+  --gpu-memory-utilization 0.6
+```
 
-### Setup
-Firstly, you have to setup a virtual environment before installing the packages syncing the project with `pyproject.toml`, follow this command to get setup
-```
-python3 venv <anyname>
-```
-After creating the virtual environment, use this following command
-```
-source <your-venv-name>/bin/activate
+**Setting up a virtual environment**
+```bash
+python3 venv venv
 ```
 
-Run `uv sync` to sync the project with `pyproject.toml`
+**Activating the virtual enviroment**
+```bash
+source venv/bin/activate
+```
 
-### Running the application
-To run the application use the following commands:
+**Installing required packages**
+```bash
+uv pip install torch>=2.13.0" transformers streamlit chromadb requests pypdf
+```
+**Running streamlit**
+```bash
+streamlit main.py
+```
 
-For Linux and MacOS
-```
-python3 main.py
-```
-For Window
-```
-python main.py
-```
+You can now access via [http://localhost:8501](http://localhost:8501/)
