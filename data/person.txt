@@ -1,0 +1,50 @@
+Based on your sources, here is a comprehensive summary of Keo Vuththana’s technical expertise, academic background, and key project contributions.
+1. Academic Background & Profile Overview
+Education: Currently pursuing a Bachelor's degree in Information Technology Engineering at the Royal University of Phnom Penh (RUPP) (2021 – Present)
+.
+Professional Philosophy: Highly collaborative developer who prioritizes knowledge-sharing, teamwork, and proactive problem-solving
+.
+Past Roles: Served in analytical and operational support positions, including as a Data Entry Clerk at Chip Mong Banking (managing validation, verification, and updates for massive database volumes)
+ and as a polling monitor for the National Election Committee
+.
+2. Technical Expertise & Core Skills
+Keo Vuththana is a Full Stack Web Developer with a versatile stack spanning front-end, back-end, database design, and workflow systems:
+Programming Languages & Frameworks: HTML, CSS, JavaScript, TypeScript, PHP, MySQL, Vue.js, React, and Laravel (integrated with Inertia.js)
+.
+Back-end & Databases: Expert in developing RESTful APIs, and designing and optimizing MySQL database schemas to ensure high-performance queries and transactional efficiency
+.
+Front-end Design: Experienced in building clean, responsive user interfaces designed to elevate user experiences
+.
+Data Structures & C++: Demonstrates a strong foundation in computer science principles, including object-oriented C++ programming, data structure design (e.g., dynamic arrays/vectors), search algorithms, and computational efficiency
+.
+DevOps & Version Control: Proficient in Agile methodology and Git (GitHub/GitLab) for repository management, branching, merging, and pull request workflows
+.
+3. Key Project Contributions
+Project A: GrowthyFlow (Academic Task & Collaboration Platform)
+Developed at the Korea Software HRD Center, GrowthyFlow is a collaborative academic ecosystem designed to connect instructors and students through task-based video meetings, real-time tracking, and AI-driven performance insights
+.
+Role: Frontend Developer
+.
+Key Contributions:
+Successfully designed and drew the platform's system and front-end workflows
+.
+Researched and integrated PeerJS (a WebRTC-based library facilitating real-time in-app video calls and screen sharing directly within task workspaces)
+.
+Researching SpringAI to back the platform's AI-driven performance reports, reducing teacher administrative workloads by answering performance queries in real-time
+.
+Project B: Laravel Filament POS System (Project Practicum)
+A self-hosted, customizable Point-of-Sale web platform tailored to single-owner small businesses to facilitate sales, stock tracking, and financial oversight
+.
+Role: Co-Developer (collaborating with team member Kong Pov under advisor Chim Bunchhun)
+.
+Key Contributions:
+Implemented the POS Partner Section using Laravel Filament, developing full database migrations, forms, and custom tables for managing customers, deliverers, and suppliers
+.
+Programmed automatic Multi-Tenancy isolation using global CompanyScope and model observers (such as CustomerCompanyCreate) to ensure that users can only interact with their respective company’s records
+.
+Configured responsive interface tables, inventory management tools, and gross profit calculators to provide simple, actionable financial analytics for users
+.
+Research & Presentation Contributions
+At the Korea Software HRD Center, Keo Vuththana has also collaborated in key technical research teams, co-delivering presentations on:
+Introduction to Microservices: Exploring decentralized app architecture, service discovery, API gateways, independent deployments, and fault isolation [multimodal_1, multimodal_11, multimodal_14, multimodal_21, multimodal_24].
+Workflow Engineering with LLM Frameworks: Researching sequential/routing execution chains, prompt chaining (such as LangChain), and advanced state, memory, and persistence management techniques [multimodal_35, multimodal_41, multimodal_56, multimodal_69].
